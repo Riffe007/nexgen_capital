@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Investment Banking Website
+
+A modern Next.js + TypeScript + Tailwind CSS project designed to convert potential clients for our investment banking firm. It includes pages like **About**, **Careers**, **Contact**, **Deal Room**, **Industry**, **Insights**, and **Services**, plus components for a smooth user experience.
+
+## File Structure
+
+    .
+    ├─ components/
+    │  ├─ ContactInfo.tsx
+    │  ├─ EmbeddedAppBox.tsx
+    │  ├─ Footer.tsx
+    │  ├─ Header.tsx
+    │  ├─ HeroSection.tsx
+    │  ├─ Layout.tsx
+    │  ├─ RecentDeals.tsx
+    │  ├─ ServicesOverview.tsx
+    │  └─ ValuationCalculator.tsx
+    ├─ pages/
+    │  ├─ about.tsx
+    │  ├─ careers.tsx
+    │  ├─ contact.tsx
+    │  ├─ dealroom.tsx
+    │  ├─ index.tsx
+    │  ├─ industry.tsx
+    │  ├─ insights.tsx
+    │  └─ services.tsx
+    ├─ public/
+    │  └─ images/
+    │     └─ (logo files, etc.)
+    ├─ src/
+    │  ├─ favicon.ico
+    │  ├─ globals.css
+    │  ├─ layout.tsx
+    │  └─ page.tsx
+    ├─ styles/
+    │  ├─ global.css
+    │  └─ tailwind.css
+    ├─ eslint.config.mjs
+    ├─ next-env.d.ts
+    ├─ next.config.ts
+    ├─ package.json
+    ├─ package-lock.json
+    ├─ postcss.config.mjs
+    ├─ tailwind.config.ts
+    └─ tsconfig.json
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies**:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Run the development server**:
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Build and Run for Production**:
+    ```bash
+    npm run build
+    npm run start
+    ```
+    This compiles a production-ready build, served on [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Marketing Site**: Hosted on Hostinger (if using a static export or Node hosting).  
+- **App**: Deployed on Azure and integrated with SharePoint for document management.
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+*(Include your license details here if applicable.)*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository.
+2. Create a new branch for your feature/fix.
+3. Commit your changes.
+4. Open a pull request for review.
